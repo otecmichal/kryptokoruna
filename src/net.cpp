@@ -1033,6 +1033,7 @@ void CConnman::AcceptConnection(const ListenSocket& hListenSocket) {
         if (!addr.SetSockAddr((const struct sockaddr*)&sockaddr))
             LogPrintf("Warning: Unknown socket family\n");
 
+    LogPrintf("MT: addr: %s",addr.ToString());
     bool whitelisted = hListenSocket.whitelisted || IsWhitelistedRange(addr);
     {
         LOCK(cs_vNodes);
@@ -2667,7 +2668,8 @@ CNode::CNode(NodeId idIn, ServiceFlags nLocalServicesIn, int nMyStartingHeightIn
     addrName = addrNameIn == "" ? addr.ToStringIPPort() : addrNameIn;
     nVersion = 0;
     strSubVer = "";
-    fWhitelisted = false;
+    //fWhitelisted = false;
+    fWhitelisted = true;  // temporary fix to avoid issue with 2017-08-03 08:16:35 Ignoring getheaders from peer=0 because node is in initial block download
     fOneShot = false;
     fAddnode = false;
     fClient = false; // set by version message
