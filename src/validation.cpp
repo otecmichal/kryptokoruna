@@ -1205,8 +1205,8 @@ bool IsInitialBlockDownload()
     }
     if (chainActive.Tip()->nChainWork < UintToArith256(chainParams.GetConsensus().nMinimumChainWork)) {
         LogPrintf("MT: chainActive.Tip()->nChainWork < UintToArith256(chainParams.GetConsensus().nMinimumChainWork) = true \n");
-        LogPrintf("MT: nChainWork = %s \n", chainActive.Tip()->nChainWork);
-        LogPrintf("MT: UintToArith256(chainParams.GetConsensus().nMinimumChainWork) = %s \n", UintToArith256(chainParams.GetConsensus().nMinimumChainWork));
+        //LogPrintf("MT: nChainWork = %s \n", chainActive.Tip()->nChainWork);
+        //LogPrintf("MT: UintToArith256(chainParams.GetConsensus().nMinimumChainWork) = %s \n", UintToArith256(chainParams.GetConsensus().nMinimumChainWork));
         return true;
     }
     if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge)) {
