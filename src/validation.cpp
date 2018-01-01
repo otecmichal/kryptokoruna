@@ -1189,14 +1189,21 @@ bool IsInitialBlockDownload()
     LOCK(cs_main);
     if (latchToFalse.load(std::memory_order_relaxed))
         return false;
-    if (fImporting || fReindex)
+    if (fImporting || fReindex) {
+        LogPrintf("MT: fImporting or fReindex = true. \n");
         return true;
-    if (chainActive.Tip() == NULL)
+    }
+    if (chainActive.Tip() == NULL) {
+        LogPrintf("MT: chainActive.Tip() == NULL \n");
         return true;
+    }
     if (chainActive.Tip()->nChainWork < UintToArith256(chainParams.GetConsensus().nMinimumChainWork))
         return true;
-    if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge))
+    if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge)) {
+        LogPrintf("MT: Napicu Tip age \n");
+        LogPrintf("MT: maxtipage = %s \n", nMaxTipAge);
         return true;
+    }
     latchToFalse.store(true, std::memory_order_relaxed);
     return false;
 }
@@ -2167,7 +2174,6 @@ void static UpdateTip(CBlockIndex *pindexNew, const CChainParams& chainParams) {
     if (!warningMessages.empty())
         LogPrintf(" warning='%s'", boost::algorithm::join(warningMessages, ", "));
     LogPrintf("\n");
-
 }
 
 /** Disconnect chainActive's tip. You probably want to call mempool.removeForReorg and manually re-limit mempool size after this, with cs_main held. */
@@ -2448,6 +2454,7 @@ static void NotifyHeaderTip() {
     bool fNotify = false;
     bool fInitialBlockDownload = false;
     static CBlockIndex* pindexHeaderOld = NULL;
+    LogPrintf("NotifyHeaderTip() \n");
     CBlockIndex* pindexHeader = NULL;
     {
         LOCK(cs_main);
