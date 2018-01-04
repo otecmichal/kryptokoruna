@@ -326,11 +326,20 @@ def deployFrameworks(frameworks, bundlePath, binaryPath, strip, verbose, deploym
         deploymentInfo.deployedFrameworks.append(framework.frameworkName)
         
         if verbose >= 2:
-            print("Processing", framework.frameworkName, "...")
+            print("Processing", framework.frameworkName, "... IN = ", framework.installName)
         
         # Get the Qt path from one of the Qt frameworks
         if deploymentInfo.qtPath is None and framework.isQtFramework():
             deploymentInfo.detectQtPath(framework.frameworkDirectory)
+
+        if framework.installName == "dist/Favorcoin-Qt.app/Contents/Frameworks/libboost_system-mt.dylib":
+            print("hovno ojeb")
+            framework.installName = "/usr/local/opt/boost@1.60/lib/libboost_system-mt.dylib"
+            framework.frameworkDirectory = "/usr/local/opt/boost@1.60/lib"
+            framework.frameworkPath = "/usr/local/opt/boost@1.60/lib/libboost_system-mt.dylib"
+            framework.binaryDirectory = "/usr/local/opt/boost@1.60/lib"
+            framework.binaryPath = "/usr/local/opt/boost@1.60/lib/libboost_system-mt.dylib"
+            framework.sourceFilePath = "/usr/local/opt/boost@1.60/lib/libboost_system-mt.dylib"
         
         if framework.installName.startswith("@executable_path") or framework.installName.startswith(bundlePath):
             if verbose >= 2:
@@ -341,6 +350,7 @@ def deployFrameworks(frameworks, bundlePath, binaryPath, strip, verbose, deploym
         changeInstallName(framework.installName, framework.deployedInstallName, binaryPath, verbose)
         
         # Copy framework to app bundle.
+        print(framework)    
         deployedBinaryPath = copyFramework(framework, bundlePath, verbose)
         # Skip the rest if already was deployed.
         if deployedBinaryPath is None:

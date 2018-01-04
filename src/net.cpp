@@ -1033,7 +1033,7 @@ void CConnman::AcceptConnection(const ListenSocket& hListenSocket) {
         if (!addr.SetSockAddr((const struct sockaddr*)&sockaddr))
             LogPrintf("Warning: Unknown socket family\n");
 
-    LogPrintf("MT: addr: %s",addr.ToString());
+    LogPrintf("MT: addr: %s \n",addr.ToString());
     bool whitelisted = hListenSocket.whitelisted || IsWhitelistedRange(addr);
     {
         LOCK(cs_vNodes);
