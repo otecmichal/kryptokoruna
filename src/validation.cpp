@@ -1179,39 +1179,39 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 bool IsInitialBlockDownload()
 {
 
-    LogPrintf("MT: starting isInitialBlockDownload(). \n");
+    //LogPrintf("MT: starting isInitialBlockDownload(). \n");
     const CChainParams& chainParams = Params();
 
     // Once this function has returned false, it must remain false.
     static std::atomic<bool> latchToFalse{false};
     // Optimization: pre-test latch before taking the lock.
     if (latchToFalse.load(std::memory_order_relaxed)) {
-        LogPrintf("MT: latchToFalse.load(std::memory_order_relaxed = true \n");
+       // LogPrintf("MT: latchToFalse.load(std::memory_order_relaxed = true \n");
         return false;
     }
 
     LOCK(cs_main);
     if (latchToFalse.load(std::memory_order_relaxed)) {
-        LogPrintf("MT: latchToFalse.load(std::memory_order_relaxed) = true \n");
+     //   LogPrintf("MT: latchToFalse.load(std::memory_order_relaxed) = true \n");
         return false;
     }
     if (fImporting || fReindex) {
-        LogPrintf("MT: fImporting or fReindex = true. \n");
+      //  LogPrintf("MT: fImporting or fReindex = true. \n");
         return true;
     }
     if (chainActive.Tip() == NULL) {
-        LogPrintf("MT: chainActive.Tip() == NULL \n");
+       // LogPrintf("MT: chainActive.Tip() == NULL \n");
         return true;
     }
     if (chainActive.Tip()->nChainWork < UintToArith256(chainParams.GetConsensus().nMinimumChainWork)) {
-        LogPrintf("MT: chainActive.Tip()->nChainWork < UintToArith256(chainParams.GetConsensus().nMinimumChainWork) = true \n");
+        //LogPrintf("MT: chainActive.Tip()->nChainWork < UintToArith256(chainParams.GetConsensus().nMinimumChainWork) = true \n");
         //LogPrintf("MT: nChainWork = %s \n", chainActive.Tip()->nChainWork);
         //LogPrintf("MT: UintToArith256(chainParams.GetConsensus().nMinimumChainWork) = %s \n", UintToArith256(chainParams.GetConsensus().nMinimumChainWork));
         return true;
     }
     if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge)) {
-        LogPrintf("MT: Napicu Tip age \n");
-        LogPrintf("MT: maxtipage = %s \n", nMaxTipAge);
+       // LogPrintf("MT: Napicu Tip age \n");
+       // LogPrintf("MT: maxtipage = %s \n", nMaxTipAge);
         return true;
     }
     latchToFalse.store(true, std::memory_order_relaxed);
