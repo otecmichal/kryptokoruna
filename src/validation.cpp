@@ -1179,31 +1179,20 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 bool IsInitialBlockDownload()
 {
 
-<<<<<<< HEAD
-=======
     //LogPrintf("MT: starting isInitialBlockDownload(). \n");
->>>>>>> 6e3f304283902f8c48a1d59936ec7f4cd615eddf
     const CChainParams& chainParams = Params();
 
     // Once this function has returned false, it must remain false.
     static std::atomic<bool> latchToFalse{false};
     // Optimization: pre-test latch before taking the lock.
     if (latchToFalse.load(std::memory_order_relaxed)) {
-<<<<<<< HEAD
-        //LogPrintf("MT: #1 latchToFalse.load(std::memory_order_relaxed = true \n");
-=======
        // LogPrintf("MT: latchToFalse.load(std::memory_order_relaxed = true \n");
->>>>>>> 6e3f304283902f8c48a1d59936ec7f4cd615eddf
         return false;
     }
 
     LOCK(cs_main);
     if (latchToFalse.load(std::memory_order_relaxed)) {
-<<<<<<< HEAD
-        //LogPrintf("MT: #1 latchToFalse.load(std::memory_order_relaxed) = true \n");
-=======
      //   LogPrintf("MT: latchToFalse.load(std::memory_order_relaxed) = true \n");
->>>>>>> 6e3f304283902f8c48a1d59936ec7f4cd615eddf
         return false;
     }
     if (fImporting || fReindex) {
@@ -1216,13 +1205,8 @@ bool IsInitialBlockDownload()
     }
     if (chainActive.Tip()->nChainWork < UintToArith256(chainParams.GetConsensus().nMinimumChainWork)) {
         //LogPrintf("MT: chainActive.Tip()->nChainWork < UintToArith256(chainParams.GetConsensus().nMinimumChainWork) = true \n");
-<<<<<<< HEAD
-        LogPrintf("MT: Initial Download: nChainWork = %s \n", chainActive.Tip()->nChainWork.ToString());
-        LogPrintf("MT: Initial Download: UintToArith256(chainParams.GetConsensus().nMinimumChainWork) = %s \n", UintToArith256(chainParams.GetConsensus().nMinimumChainWork).ToString());
-=======
         //LogPrintf("MT: nChainWork = %s \n", chainActive.Tip()->nChainWork);
         //LogPrintf("MT: UintToArith256(chainParams.GetConsensus().nMinimumChainWork) = %s \n", UintToArith256(chainParams.GetConsensus().nMinimumChainWork));
->>>>>>> 6e3f304283902f8c48a1d59936ec7f4cd615eddf
         return true;
     }
     if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge)) {
