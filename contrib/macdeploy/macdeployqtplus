@@ -334,12 +334,12 @@ def deployFrameworks(frameworks, bundlePath, binaryPath, strip, verbose, deploym
 
         if framework.installName == "dist/Favorcoin-Qt.app/Contents/Frameworks/libboost_system-mt.dylib":
             print("hovno ojeb")
-            framework.installName = "/usr/local/opt/boost@1.60/lib/libboost_system-mt.dylib"
-            framework.frameworkDirectory = "/usr/local/opt/boost@1.60/lib"
-            framework.frameworkPath = "/usr/local/opt/boost@1.60/lib/libboost_system-mt.dylib"
-            framework.binaryDirectory = "/usr/local/opt/boost@1.60/lib"
-            framework.binaryPath = "/usr/local/opt/boost@1.60/lib/libboost_system-mt.dylib"
-            framework.sourceFilePath = "/usr/local/opt/boost@1.60/lib/libboost_system-mt.dylib"
+            framework.installName = "/usr/local/opt/boost/lib/libboost_system-mt.dylib"
+            framework.frameworkDirectory = "/usr/local/opt/boost/lib"
+            framework.frameworkPath = "/usr/local/opt/boost/lib/libboost_system-mt.dylib"
+            framework.binaryDirectory = "/usr/local/opt/boost/lib"
+            framework.binaryPath = "/usr/local/opt/boost/lib/libboost_system-mt.dylib"
+            framework.sourceFilePath = "/usr/local/opt/boost/lib/libboost_system-mt.dylib"
         
         if framework.installName.startswith("@executable_path") or framework.installName.startswith(bundlePath):
             if verbose >= 2:
