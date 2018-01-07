@@ -71,10 +71,10 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 840000;
-        consensus.BIP34Height = 710000;
-        consensus.BIP34Hash = uint256S("fa09d204a83a768ed5a7c8d441fa62f2043abf420cff1226c7b4329aeb9d51cf");
-        consensus.BIP65Height = 918684; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a
-        consensus.BIP66Height = 811879; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894
+        consensus.BIP34Height = 901;
+        consensus.BIP34Hash = uint256S("85d982afeb5678c6db3960d2bede01ff48595f25fd5082834fdae84f437539c2");
+        consensus.BIP65Height = 902; // a75d671abe6029458c96f0a6dc25a39878d04b2e36dc5f65a0b56a6a62e2c0f3
+        consensus.BIP66Height = 904; // 8dfbe15e1c8d8b85e6ed330048341b89d18cca85019d093d058082057568f8ea
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
         consensus.nPowTargetTimespan = 60 * 60; // 60 minutes 
         consensus.nPowTargetSpacing = 2 * 60; // 1 minute
@@ -98,10 +98,10 @@ public:
 
         // The best chain should have at least this much work.
         //consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000006805c7318ce2736c0");
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000010");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000100");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x1673fa904a93848eca83d5ca82c7af974511a7e640e22edc2976420744f2e56a"); //1155631
+        consensus.defaultAssumeValid = uint256S("0x85d982afeb5678c6db3960d2bede01ff48595f25fd5082834fdae84f437539c2"); //901
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -161,10 +161,10 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 840000;
-        consensus.BIP34Height = 76;
-        consensus.BIP34Hash = uint256S("8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573");
-        consensus.BIP65Height = 76; // 8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573
-        consensus.BIP66Height = 76; // 8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573
+        consensus.BIP34Height = 342;
+        consensus.BIP34Hash = uint256S("4ea29e91074b7371e9965b10961d9b79e6cc6d61659e9731c8b535d0f5bbb46a");
+        consensus.BIP65Height = 342; // 4ea29e91074b7371e9965b10961d9b79e6cc6d61659e9731c8b535d0f5bbb46a
+        consensus.BIP66Height = 342; // 4ea29e91074b7371e9965b10961d9b79e6cc6d61659e9731c8b535d0f5bbb46a
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 60 * 60; // 10 minutes
         consensus.nPowTargetSpacing = 2 * 60; // 1 minute
@@ -252,8 +252,8 @@ public:
         consensus.nSubsidyHalvingInterval = 150;
         consensus.BIP34Height = 100000000; // BIP34 has not activated on regtest (far in the future so block v1 are not rejected in tests)
         consensus.BIP34Hash = uint256();
-        consensus.BIP65Height = 1351; // BIP65 activated on regtest (Used in rpc activation tests)
-        consensus.BIP66Height = 1251; // BIP66 activated on regtest (Used in rpc activation tests)
+        consensus.BIP65Height = 342; // BIP65 activated on regtest (Used in rpc activation tests)
+        consensus.BIP66Height = 342; // BIP66 activated on regtest (Used in rpc activation tests)
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 60 * 60; // 10 minutes
         consensus.nPowTargetSpacing = 2 * 60; // 1 minute
