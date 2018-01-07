@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Favorcoin tests.
+Utilities to generate test vectors for the data-driven Kryptokoruna tests.
 
 Usage: 
 

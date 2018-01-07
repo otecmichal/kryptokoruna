@@ -62,12 +62,12 @@
         <translation>Адреси за получаване</translation>
     </message>
     <message>
-        <source>These are your Favorcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Kryptokoruna addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Това са адресите на получателите на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Favorcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите Favorcoin адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
+        <source>These are your Kryptokoruna addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са Вашите Kryptokoruna адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,7 +168,7 @@
         <translation>Потвърдете на шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FAVORCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KRYPTOKORUNAS&lt;/b&gt;!</source>
         <translation>ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ БИТКОИНИ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -318,7 +318,7 @@
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
+        <source>Send coins to a Kryptokoruna address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -342,7 +342,7 @@
         <translation>&amp;Проверка на съобщение...</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
+        <source>Kryptokoruna</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -370,12 +370,12 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your Favorcoin addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя Favorcoin адрес за да докажете,че е ваш.</translation>
+        <source>Sign messages with your Kryptokoruna addresses to prove you own them</source>
+        <translation>Пишете съобщения със своя Kryptokoruna адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Favorcoin addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Favorcoin адреси.</translation>
+        <source>Verify messages to ensure they were signed with specified Kryptokoruna addresses</source>
+        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Kryptokoruna адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -394,8 +394,8 @@
         <translation>Раздели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and favorcoin: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и Favorcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and kryptokoruna: URIs)</source>
+        <translation>Изискване на плащания(генерира QR кодове и Kryptokoruna: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -406,8 +406,8 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a favorcoin: URI or payment request</source>
-        <translation>Отворете Favorcoin: URI  или заявка за плащане</translation>
+        <source>Open a kryptokoruna: URI or payment request</source>
+        <translation>Отворете Kryptokoruna: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -450,8 +450,8 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Favorcoin command-line options</source>
-        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Favorcoin команди</translation>
+        <source>Show the %1 help message to get a list with possible Kryptokoruna command-line options</source>
+        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Kryptokoruna команди</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -690,7 +690,7 @@
         <translation>Редактиране на адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Favorcoin address.</source>
+        <source>The entered address "%1" is not a valid Kryptokoruna address.</source>
         <translation>"%1" не е валиден Биткоин адрес.</translation>
     </message>
     <message>
@@ -904,16 +904,16 @@
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the Favorcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Favorcoin порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the Kryptokoruna client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия Kryptokoruna порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Favorcoin network through a SOCKS5 proxy.</source>
-        <translation>Свързване с Favorcoin мрежата чрез SOCKS5  прокси.</translation>
+        <source>Connect to the Kryptokoruna network through a SOCKS5 proxy.</source>
+        <translation>Свързване с Kryptokoruna мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1007,7 +1007,7 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Favorcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kryptokoruna network after a connection is established, but this process has not completed yet.</source>
         <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1062,8 +1062,8 @@
         <translation>Възникна грешка по време назаявката за плащане</translation>
     </message>
     <message>
-        <source>Cannot start favorcoin: click-to-pay handler</source>
-        <translation>Favorcoin не можe да се стартира: click-to-pay handler</translation>
+        <source>Cannot start kryptokoruna: click-to-pay handler</source>
+        <translation>Kryptokoruna не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1136,8 +1136,8 @@
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Favorcoin address (e.g. %1)</source>
-        <translation>Въведете Favorcoin адрес (например: %1)</translation>
+        <source>Enter a Kryptokoruna address (e.g. %1)</source>
+        <translation>Въведете Kryptokoruna адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1689,8 +1689,8 @@
         <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Favorcoin address</source>
-        <translation>Внимание: Невалиден Favorcoin адрес</translation>
+        <source>Warning: Invalid Kryptokoruna address</source>
+        <translation>Внимание: Невалиден Kryptokoruna адрес</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1809,7 +1809,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Favorcoin address</source>
+        <source>Sign the message to prove you own this Kryptokoruna address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -1825,7 +1825,7 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Favorcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Kryptokoruna address</source>
         <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
     </message>
     <message>
@@ -2346,8 +2346,8 @@
         <translation>Въведете Ваш публичен адрес</translation>
     </message>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>Favorcoin ядро</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>Kryptokoruna ядро</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

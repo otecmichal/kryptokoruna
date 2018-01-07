@@ -38,8 +38,8 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>

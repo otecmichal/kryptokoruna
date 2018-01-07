@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
-        <translation>Trimite monedele către o adresă Favorcoin</translation>
+        <source>Send coins to a Kryptokoruna address</source>
+        <translation>Trimite monedele către o adresă Kryptokoruna</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Favorcoin addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Favorcoin pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your Kryptokoruna addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de Kryptokoruna pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Favorcoin addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Favorcoin specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified Kryptokoruna addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Kryptokoruna specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -214,12 +214,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and favorcoin: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și favorcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and kryptokoruna: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și kryptokoruna: URIs)</translation>
     </message>
     <message>
-        <source>Open a favorcoin: URI or payment request</source>
-        <translation>Deschide un favorcoin: URI sau cerere de plată</translation>
+        <source>Open a kryptokoruna: URI or payment request</source>
+        <translation>Deschide un kryptokoruna: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -748,8 +748,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>Favorcoin Core</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>Kryptokoruna Core</translation>
     </message>
     <message>
         <source>Information</source>

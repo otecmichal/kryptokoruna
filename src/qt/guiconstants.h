@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Favorcoin"
-#define QAPP_ORG_DOMAIN "favorcoin.org"
-#define QAPP_APP_NAME_DEFAULT "Favorcoin-Qt"
-#define QAPP_APP_NAME_TESTNET "Favorcoin-Qt-testnet"
+#define QAPP_ORG_NAME "Kryptokoruna"
+#define QAPP_ORG_DOMAIN "kryptokoruna.org"
+#define QAPP_APP_NAME_DEFAULT "Kryptokoruna-Qt"
+#define QAPP_APP_NAME_TESTNET "Kryptokoruna-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

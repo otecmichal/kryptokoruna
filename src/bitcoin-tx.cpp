@@ -54,10 +54,10 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || IsArgSet("-?") || IsArgSet("-h") || IsArgSet("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = strprintf(_("%s favorcoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = strprintf(_("%s kryptokoruna-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  favorcoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded favorcoin transaction") + "\n" +
-              "  favorcoin-tx [options] -create [commands]   " + _("Create hex-encoded favorcoin transaction") + "\n" +
+              "  kryptokoruna-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded kryptokoruna transaction") + "\n" +
+              "  kryptokoruna-tx [options] -create [commands]   " + _("Create hex-encoded kryptokoruna transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

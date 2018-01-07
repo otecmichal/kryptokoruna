@@ -62,12 +62,12 @@
         <translation>Vastuvõtvad aadressid</translation>
     </message>
     <message>
-        <source>These are your Favorcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Favorcoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your Kryptokoruna addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Kryptokoruna aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
     <message>
-        <source>These are your Favorcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Need on sinu Favorcoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
+        <source>These are your Kryptokoruna addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Need on sinu Kryptokoruna aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Kinnita rahakoti krüpteerimine.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FAVORCOINS&lt;/b&gt;!</source>
-        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA FAVORCOINID&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KRYPTOKORUNAS&lt;/b&gt;!</source>
+        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA KRYPTOKORUNAID&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -290,8 +290,8 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
-        <translation>Saada münte Favorcoini aadressile</translation>
+        <source>Send coins to a Kryptokoruna address</source>
+        <translation>Saada münte Kryptokorunai aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,8 +314,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -342,12 +342,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your Favorcoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Favorcoini aadressiga</translation>
+        <source>Sign messages with your Kryptokoruna addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Kryptokorunai aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Favorcoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Favorcoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified Kryptokoruna addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Kryptokorunai aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -366,20 +366,20 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and favorcoin: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja favorcoini: URId)</translation>
+        <source>Request payments (generates QR codes and kryptokoruna: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja kryptokorunai: URId)</translation>
     </message>
     <message>
-        <source>Open a favorcoin: URI or payment request</source>
-        <translation>Ava favorcoini: URI või maksepäring</translation>
+        <source>Open a kryptokoruna: URI or payment request</source>
+        <translation>Ava kryptokorunai: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Favorcoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Favorcoini võrku</numerusform><numerusform>%n aktiivset ühendust Favorcoini võrku</numerusform></translation>
+        <source>%n active connection(s) to Kryptokoruna network</source>
+        <translation><numerusform>%n aktiivne ühendus Kryptokorunai võrku</numerusform><numerusform>%n aktiivset ühendust Kryptokorunai võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -626,8 +626,8 @@
         <translation>Muuda saatvat aadressi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Favorcoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne Favorcoin aadress.</translation>
+        <source>The entered address "%1" is not a valid Kryptokoruna address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne Kryptokoruna aadress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -756,8 +756,8 @@
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the Favorcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Favorcoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the Kryptokoruna client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Kryptokorunai kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -855,7 +855,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Favorcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kryptokoruna network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Liteconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1337,8 +1337,8 @@
         <translation>Maksepäring aegunud.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Favorcoin address</source>
-        <translation>Hoiatus: Ebakorrektne Favorcoin aadress</translation>
+        <source>Warning: Invalid Kryptokoruna address</source>
+        <translation>Hoiatus: Ebakorrektne Kryptokoruna aadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1417,8 +1417,8 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The Favorcoin address to sign the message with</source>
-        <translation>Favorcoin aadress millega sõnum allkirjastada</translation>
+        <source>The Kryptokoruna address to sign the message with</source>
+        <translation>Kryptokoruna aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1449,8 +1449,8 @@
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Favorcoin address</source>
-        <translation>Allkirjasta sõnum Favorcoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this Kryptokoruna address</source>
+        <translation>Allkirjasta sõnum Kryptokorunai aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1469,12 +1469,12 @@
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The Favorcoin address the message was signed with</source>
-        <translation>Favorcoin aadress millega sõnum on allkirjastatud</translation>
+        <source>The Kryptokoruna address the message was signed with</source>
+        <translation>Kryptokoruna aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Favorcoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Favorcoini aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified Kryptokoruna address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Kryptokorunai aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1758,8 +1758,8 @@
         <translation>Tööta taustal ning aktsepteeri käsklusi</translation>
     </message>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>Favorcoini tuumik</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>Kryptokorunai tuumik</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

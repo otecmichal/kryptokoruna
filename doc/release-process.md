@@ -5,7 +5,7 @@ Before every release candidate:
 
 * Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/favorcoin-project/favorcoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/kryptokoruna-project/kryptokoruna/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -31,12 +31,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/favorcoin-project/gitian.sigs.ltc.git
-    git clone https://github.com/favorcoin-project/favorcoin-detached-sigs.git
+    git clone https://github.com/kryptokoruna-project/gitian.sigs.ltc.git
+    git clone https://github.com/kryptokoruna-project/kryptokoruna-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/favorcoin-project/favorcoin.git
+    git clone https://github.com/kryptokoruna-project/kryptokoruna.git
 
-### Favorcoin maintainers/release engineers, update version in sources
+### Kryptokoruna maintainers/release engineers, update version in sources
 
 Update the following:
 
@@ -75,7 +75,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./favorcoin
+    pushd ./kryptokoruna
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -109,7 +109,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../favorcoin/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../kryptokoruna/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -117,50 +117,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url favorcoin=/path/to/favorcoin,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url kryptokoruna=/path/to/kryptokoruna,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Favorcoin Core for Linux, Windows, and OS X:
+### Build and sign Kryptokoruna Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit favorcoin=v${VERSION} ../favorcoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../favorcoin/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/favorcoin-*.tar.gz build/out/src/favorcoin-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit kryptokoruna=v${VERSION} ../kryptokoruna/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../kryptokoruna/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/kryptokoruna-*.tar.gz build/out/src/kryptokoruna-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit favorcoin=v${VERSION} ../favorcoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../favorcoin/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/favorcoin-*-win-unsigned.tar.gz inputs/favorcoin-win-unsigned.tar.gz
-    mv build/out/favorcoin-*.zip build/out/favorcoin-*.exe ../
+    ./bin/gbuild --memory 3000 --commit kryptokoruna=v${VERSION} ../kryptokoruna/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../kryptokoruna/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/kryptokoruna-*-win-unsigned.tar.gz inputs/kryptokoruna-win-unsigned.tar.gz
+    mv build/out/kryptokoruna-*.zip build/out/kryptokoruna-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit favorcoin=v${VERSION} ../favorcoin/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../favorcoin/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/favorcoin-*-osx-unsigned.tar.gz inputs/favorcoin-osx-unsigned.tar.gz
-    mv build/out/favorcoin-*.tar.gz build/out/favorcoin-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit kryptokoruna=v${VERSION} ../kryptokoruna/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../kryptokoruna/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/kryptokoruna-*-osx-unsigned.tar.gz inputs/kryptokoruna-osx-unsigned.tar.gz
+    mv build/out/kryptokoruna-*.tar.gz build/out/kryptokoruna-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`favorcoin-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`favorcoin-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`favorcoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `favorcoin-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`favorcoin-${VERSION}-osx-unsigned.dmg`, `favorcoin-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`kryptokoruna-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`kryptokoruna-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`kryptokoruna-${VERSION}-win[32|64]-setup-unsigned.exe`, `kryptokoruna-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`kryptokoruna-${VERSION}-osx-unsigned.dmg`, `kryptokoruna-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs.ltc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import favorcoin/contrib/gitian-keys/*.pgp
+    gpg --import kryptokoruna/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../favorcoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../favorcoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../favorcoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../kryptokoruna/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../kryptokoruna/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../kryptokoruna/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -178,25 +178,25 @@ Commit your signature to gitian.sigs.ltc:
 Wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [favorcoin-detached-sigs](https://github.com/favorcoin-project/favorcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [kryptokoruna-detached-sigs](https://github.com/kryptokoruna-project/kryptokoruna-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../favorcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../favorcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../favorcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/favorcoin-osx-signed.dmg ../favorcoin-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../kryptokoruna/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../kryptokoruna/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../kryptokoruna/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/kryptokoruna-osx-signed.dmg ../kryptokoruna-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../favorcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../favorcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../favorcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/favorcoin-*win64-setup.exe ../favorcoin-${VERSION}-win64-setup.exe
-    mv build/out/favorcoin-*win32-setup.exe ../favorcoin-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../kryptokoruna/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../kryptokoruna/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../kryptokoruna/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/kryptokoruna-*win64-setup.exe ../kryptokoruna-${VERSION}-win64-setup.exe
+    mv build/out/kryptokoruna-*win32-setup.exe ../kryptokoruna-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -218,23 +218,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-favorcoin-${VERSION}-aarch64-linux-gnu.tar.gz
-favorcoin-${VERSION}-arm-linux-gnueabihf.tar.gz
-favorcoin-${VERSION}-i686-pc-linux-gnu.tar.gz
-favorcoin-${VERSION}-x86_64-linux-gnu.tar.gz
-favorcoin-${VERSION}-osx64.tar.gz
-favorcoin-${VERSION}-osx.dmg
-favorcoin-${VERSION}.tar.gz
-favorcoin-${VERSION}-win32-setup.exe
-favorcoin-${VERSION}-win32.zip
-favorcoin-${VERSION}-win64-setup.exe
-favorcoin-${VERSION}-win64.zip
+kryptokoruna-${VERSION}-aarch64-linux-gnu.tar.gz
+kryptokoruna-${VERSION}-arm-linux-gnueabihf.tar.gz
+kryptokoruna-${VERSION}-i686-pc-linux-gnu.tar.gz
+kryptokoruna-${VERSION}-x86_64-linux-gnu.tar.gz
+kryptokoruna-${VERSION}-osx64.tar.gz
+kryptokoruna-${VERSION}-osx.dmg
+kryptokoruna-${VERSION}.tar.gz
+kryptokoruna-${VERSION}-win32-setup.exe
+kryptokoruna-${VERSION}-win32.zip
+kryptokoruna-${VERSION}-win64-setup.exe
+kryptokoruna-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the favorcoin.org server, nor put them in the torrent*.
+space *do not upload these to the kryptokoruna.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -244,24 +244,24 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the favorcoin.org server.
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the kryptokoruna.org server.
 
 ```
 
-- Update favorcoin.org version
+- Update kryptokoruna.org version
 
 - Announce the release:
 
-  - favorcoin-dev and favorcoin-dev mailing list
+  - kryptokoruna-dev and kryptokoruna-dev mailing list
 
-  - blog.favorcoin.org blog post
+  - blog.kryptokoruna.org blog post
 
-  - Update title of #favorcoin and #favorcoin-dev on Freenode IRC
+  - Update title of #kryptokoruna and #kryptokoruna-dev on Freenode IRC
 
-  - Optionally twitter, reddit /r/Favorcoin, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Kryptokoruna, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/favorcoin-project/favorcoin/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/kryptokoruna-project/kryptokoruna/releases/new) with a link to the archived release notes.
 
   - Celebrate

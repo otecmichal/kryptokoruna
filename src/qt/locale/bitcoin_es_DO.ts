@@ -142,8 +142,8 @@
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
-        <translation>Enviar monedas a una dirección Favorcoin</translation>
+        <source>Send coins to a Kryptokoruna address</source>
+        <translation>Enviar monedas a una dirección Kryptokoruna</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-        <source>Sign messages with your Favorcoin addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Favorcoin para demostrar la propiedad</translation>
+        <source>Sign messages with your Kryptokoruna addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones Kryptokoruna para demostrar la propiedad</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Favorcoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Favorcoin concretas</translation>
+        <source>Verify messages to ensure they were signed with specified Kryptokoruna addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones Kryptokoruna concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,8 +218,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and favorcoin: URIs)</source>
-        <translation>Solicitar pagos (genera codigo QR y URL's de Favorcoin)</translation>
+        <source>Request payments (generates QR codes and kryptokoruna: URIs)</source>
+        <translation>Solicitar pagos (genera codigo QR y URL's de Kryptokoruna)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -230,8 +230,8 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-        <source>Open a favorcoin: URI or payment request</source>
-        <translation>Abrir un favorcoin: URI o petición de pago</translation>
+        <source>Open a kryptokoruna: URI or payment request</source>
+        <translation>Abrir un kryptokoruna: URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -494,8 +494,8 @@
         <translation>Experto</translation>
     </message>
     <message>
-        <source>Automatically open the Favorcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Favorcoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the Kryptokoruna client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente Kryptokoruna en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -589,8 +589,8 @@
         <translation>Desde</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Favorcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Favorcoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kryptokoruna network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Kryptokoruna después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1019,8 +1019,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Favorcoin address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Favorcoin</translation>
+        <source>Sign the message to prove you own this Kryptokoruna address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección Kryptokoruna</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1039,8 +1039,8 @@
         <translation>&amp;Verificar mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Favorcoin address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Favorcoin indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified Kryptokoruna address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Kryptokoruna indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1123,8 +1123,8 @@
 </translation>
     </message>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>Núcleo de Favorcoin</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>Núcleo de Kryptokoruna</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

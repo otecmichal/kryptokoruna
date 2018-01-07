@@ -150,8 +150,8 @@
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
-        <translation>Enviar monedas a una dirección Favorcoin</translation>
+        <source>Send coins to a Kryptokoruna address</source>
+        <translation>Enviar monedas a una dirección Kryptokoruna</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -174,8 +174,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -418,8 +418,8 @@
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Favorcoin network.</source>
-        <translation>Mensaje opcional para agregar a la solicitud de pago, el cual será mostrado cuando la solicitud este abierta. Nota: El mensaje no se manda con el pago a travéz de la red de Favorcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Kryptokoruna network.</source>
+        <translation>Mensaje opcional para agregar a la solicitud de pago, el cual será mostrado cuando la solicitud este abierta. Nota: El mensaje no se manda con el pago a travéz de la red de Kryptokoruna.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -604,8 +604,8 @@
         <translation>Opciones:</translation>
     </message>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>nucleo Favorcoin</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>nucleo Kryptokoruna</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

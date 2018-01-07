@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Favorcoin"
-            VALUE "FileDescription",    "favorcoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
+            VALUE "CompanyName",        "Kryptokoruna"
+            VALUE "FileDescription",    "kryptokoruna-cli (JSON-RPC client for " PACKAGE_NAME ")"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "favorcoin-cli"
+            VALUE "InternalName",       "kryptokoruna-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "favorcoin-cli.exe"
-            VALUE "ProductName",        "favorcoin-cli"
+            VALUE "OriginalFilename",   "kryptokoruna-cli.exe"
+            VALUE "ProductName",        "kryptokoruna-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

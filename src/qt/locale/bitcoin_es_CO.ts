@@ -126,8 +126,8 @@
         <translation>Abrir &amp;URL...</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
-        <translation>Enviando monedas a una dirección de Favorcoin</translation>
+        <source>Send coins to a Kryptokoruna address</source>
+        <translation>Enviando monedas a una dirección de Kryptokoruna</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -146,8 +146,8 @@
         <translation>&amp;Verificar Mensaje...</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -296,8 +296,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>Favorcoin Core</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>Kryptokoruna Core</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

@@ -166,8 +166,8 @@
         <translation>Ladataan lohkoindeksiä...</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
-        <translation>Lähetä kolikoita Favorcoin-osoitteeseen</translation>
+        <source>Send coins to a Kryptokoruna address</source>
+        <translation>Lähetä kolikoita Kryptokoruna-osoitteeseen</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -190,8 +190,8 @@
         <translation>Varmista &amp;viesti...</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -211,19 +211,19 @@
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Näytä tai piilota Favorcoin-ikkuna</translation>
+        <translation>Näytä tai piilota Kryptokoruna-ikkuna</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>Suojaa yksityiset avaimet, jotka kuuluvat lompakkoosi</translation>
     </message>
     <message>
-        <source>Sign messages with your Favorcoin addresses to prove you own them</source>
-        <translation>Allekirjoita viestisi omalla Favorcoin -osoitteellasi todistaaksesi, että omistat ne</translation>
+        <source>Sign messages with your Kryptokoruna addresses to prove you own them</source>
+        <translation>Allekirjoita viestisi omalla Kryptokoruna -osoitteellasi todistaaksesi, että omistat ne</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Favorcoin addresses</source>
-        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä Favorcoin -osoitteella</translation>
+        <source>Verify messages to ensure they were signed with specified Kryptokoruna addresses</source>
+        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä Kryptokoruna -osoitteella</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -242,8 +242,8 @@
         <translation>Välilehtipalkki</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and favorcoin: URIs)</source>
-        <translation>Pyydä maksuja (Luo QR koodit ja favorcoin: URIt)</translation>
+        <source>Request payments (generates QR codes and kryptokoruna: URIs)</source>
+        <translation>Pyydä maksuja (Luo QR koodit ja kryptokoruna: URIt)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -254,16 +254,16 @@
         <translation>Näytä vastaanottamiseen käytettyjen osoitteiden ja nimien lista</translation>
     </message>
     <message>
-        <source>Open a favorcoin: URI or payment request</source>
-        <translation>Avaa favorcoin: URI tai maksupyyntö</translation>
+        <source>Open a kryptokoruna: URI or payment request</source>
+        <translation>Avaa kryptokoruna: URI tai maksupyyntö</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komentorivin valinnat</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Favorcoin network</source>
-        <translation><numerusform>%n aktiivinen yhteys Favorcoin-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä Favorcoin-verkkoon</numerusform></translation>
+        <source>%n active connection(s) to Kryptokoruna network</source>
+        <translation><numerusform>%n aktiivinen yhteys Kryptokoruna-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä Kryptokoruna-verkkoon</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -306,8 +306,8 @@
         <translation>Rahansiirtohistoria on ajan tasalla</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Favorcoin command-line options</source>
-        <translation>Näytä %1 ohjeet saadaksesi listan mahdollisista Favorcoinin komentorivivalinnoista</translation>
+        <source>Show the %1 help message to get a list with possible Kryptokoruna command-line options</source>
+        <translation>Näytä %1 ohjeet saadaksesi listan mahdollisista Kryptokorunain komentorivivalinnoista</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -551,8 +551,8 @@
         <translation>Tämä on ensimmäinen kerta, kun %1 on käynnistetty, joten voit valita data-hakemiston paikan.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Favorcoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 lataa ja tallentaa kopion Favorcoinin lohkoketjusta. Vähintään %2Gt dataa tullaan tallentamaan tähän hakemistoon, ja tarve kasvaa ajan myötä. Lompakko tullaan myös tallentamaan tähän hakemistoon.</translation>
+        <source>%1 will download and store a copy of the Kryptokoruna block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 lataa ja tallentaa kopion Kryptokorunain lohkoketjusta. Vähintään %2Gt dataa tullaan tallentamaan tähän hakemistoon, ja tarve kasvaa ajan myötä. Lompakko tullaan myös tallentamaan tähän hakemistoon.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -708,16 +708,16 @@
         <translation>&amp;Käytä varmistamattomia vaihtorahoja</translation>
     </message>
     <message>
-        <source>Automatically open the Favorcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa Favorcoin-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
+        <source>Automatically open the Kryptokoruna client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa Kryptokoruna-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Portin uudelleenohjaus &amp;UPnP:llä</translation>
     </message>
     <message>
-        <source>Connect to the Favorcoin network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä Favorcoin-verkkoon SOCKS5-välityspalvelimen kautta.</translation>
+        <source>Connect to the Kryptokoruna network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Kryptokoruna-verkkoon SOCKS5-välityspalvelimen kautta.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -756,8 +756,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Favorcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Yhdistä Favorcoin-verkkoon erillisen SOCKS5-välityspalvelimen kautta piilotettuja Tor-palveluja varten.</translation>
+        <source>Connect to the Kryptokoruna network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Yhdistä Kryptokoruna-verkkoon erillisen SOCKS5-välityspalvelimen kautta piilotettuja Tor-palveluja varten.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -793,11 +793,11 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Yksikkö jona favorcoin-määrät näytetään</translation>
+        <translation>Yksikkö jona kryptokoruna-määrät näytetään</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Valitse mitä yksikköä käytetään ensisijaisesti favorcoin-määrien näyttämiseen.</translation>
+        <translation>Valitse mitä yksikköä käytetään ensisijaisesti kryptokoruna-määrien näyttämiseen.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -847,8 +847,8 @@
         <translation>Lomake</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Favorcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu Favorcoin-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kryptokoruna network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu Kryptokoruna-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -888,7 +888,7 @@
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation>Tililläsi tällä hetkellä olevien Favorcoinien määrä</translation>
+        <translation>Tililläsi tällä hetkellä olevien Kryptokorunaien määrä</translation>
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>
@@ -936,8 +936,8 @@
         <translation>Määrä</translation>
     </message>
     <message>
-        <source>Enter a Favorcoin address (e.g. %1)</source>
-        <translation>Syötä Favorcoin-osoite (esim. %1)</translation>
+        <source>Enter a Kryptokoruna address (e.g. %1)</source>
+        <translation>Syötä Kryptokoruna-osoite (esim. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1276,8 +1276,8 @@
         <translation>&amp;Uudelleenkäytä vastaanotto-osoitetta (ei suositella)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Favorcoin network.</source>
-        <translation>Valinnainen viesti liitetään maksupyyntöön ja näytetään avattaessa. Viestiä ei lähetetä Favorcoin-verkkoon.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Kryptokoruna network.</source>
+        <translation>Valinnainen viesti liitetään maksupyyntöön ja näytetään avattaessa. Viestiä ei lähetetä Kryptokoruna-verkkoon.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1354,7 +1354,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Lähetä Favorcoineja</translation>
+        <translation>Lähetä Kryptokorunaeja</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1508,8 +1508,8 @@
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The Favorcoin address to send the payment to</source>
-        <translation>Favorcoin-osoite johon maksu lähetetään</translation>
+        <source>The Kryptokoruna address to send the payment to</source>
+        <translation>Kryptokoruna-osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1528,8 +1528,8 @@
         <translation>Poista tämä alkio</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less favorcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Kulu vähennetään lähetettävästä määrästä. Saaja vastaanottaa vähemmän favorcoineja kuin merkitset Määrä-kenttään. Jos saajia on monia, kulu jaetaan tasan.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less kryptokorunas than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Kulu vähennetään lähetettävästä määrästä. Saaja vastaanottaa vähemmän kryptokorunaeja kuin merkitset Määrä-kenttään. Jos saajia on monia, kulu jaetaan tasan.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -1552,8 +1552,8 @@
         <translation>Aseta nimi tälle osoitteelle lisätäksesi sen käytettyjen osoitteiden listalle.</translation>
     </message>
     <message>
-        <source>A message that was attached to the favorcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Favorcoin network.</source>
-        <translation>Viesti joka liitettiin favorcoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Favorcoin-verkkoon.</translation>
+        <source>A message that was attached to the kryptokoruna: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Kryptokoruna network.</source>
+        <translation>Viesti joka liitettiin kryptokoruna: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Kryptokoruna-verkkoon.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1589,8 +1589,8 @@
         <translation>&amp;Allekirjoita viesti</translation>
     </message>
     <message>
-        <source>The Favorcoin address to sign the message with</source>
-        <translation>Favorcoin-osoite jolla viesti allekirjoitetaan</translation>
+        <source>The Kryptokoruna address to sign the message with</source>
+        <translation>Kryptokoruna-osoite jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1621,8 +1621,8 @@
         <translation>Kopioi tämänhetkinen allekirjoitus leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Favorcoin address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Favorcoin-osoitteen</translation>
+        <source>Sign the message to prove you own this Kryptokoruna address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Kryptokoruna-osoitteen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1641,12 +1641,12 @@
         <translation>&amp;Varmista viesti</translation>
     </message>
     <message>
-        <source>The Favorcoin address the message was signed with</source>
-        <translation>Favorcoin-osoite jolla viesti on allekirjoitettu</translation>
+        <source>The Kryptokoruna address the message was signed with</source>
+        <translation>Kryptokoruna-osoite jolla viesti on allekirjoitettu</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Favorcoin address</source>
-        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä Favorcoin-osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified Kryptokoruna address</source>
+        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä Kryptokoruna-osoitteella</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1778,8 +1778,8 @@
         <translation>HTTP-palvelinta ei voitu käynnistää. Katso debug-lokista lisätietoja.</translation>
     </message>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>Favorcoin-ydin</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>Kryptokoruna-ydin</translation>
     </message>
     <message>
         <source>The %s developers</source>

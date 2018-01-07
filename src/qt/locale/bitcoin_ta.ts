@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -708,8 +708,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>Favorcoin மையம்</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>Kryptokoruna மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

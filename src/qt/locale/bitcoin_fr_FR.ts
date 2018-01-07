@@ -218,8 +218,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
-        <translation>Envoyer des pièces à une adresse Favorcoin</translation>
+        <source>Send coins to a Kryptokoruna address</source>
+        <translation>Envoyer des pièces à une adresse Kryptokoruna</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -242,8 +242,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -270,8 +270,8 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Favorcoin addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Favorcoin pour prouver que vous les détenez</translation>
+        <source>Sign messages with your Kryptokoruna addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses Kryptokoruna pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -290,24 +290,24 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and favorcoin: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et favorcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and kryptokoruna: URIs)</source>
+        <translation>Demander des paiements (générer QR codes et kryptokoruna: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Montrer la liste des adresses d'envois utilisées et les étiquettes</translation>
     </message>
     <message>
-        <source>Open a favorcoin: URI or payment request</source>
-        <translation>Ouvrir un favorcoin: URI ou demande de paiement</translation>
+        <source>Open a kryptokoruna: URI or payment request</source>
+        <translation>Ouvrir un kryptokoruna: URI ou demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Favorcoin network</source>
-        <translation><numerusform>%n connexion active au réseau Favorcoin</numerusform><numerusform>%n connexions actives au réseau Favorcoin</numerusform></translation>
+        <source>%n active connection(s) to Kryptokoruna network</source>
+        <translation><numerusform>%n connexion active au réseau Kryptokoruna</numerusform><numerusform>%n connexions actives au réseau Kryptokoruna</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -684,8 +684,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Favorcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Favorcoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the Kryptokoruna client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client Kryptokoruna automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -844,8 +844,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Favorcoin address (e.g. %1)</source>
-        <translation>Entrer une adresse Favorcoin (e.g. %1)</translation>
+        <source>Enter a Kryptokoruna address (e.g. %1)</source>
+        <translation>Entrer une adresse Kryptokoruna (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1662,8 +1662,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>Favorcoin Core</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>Kryptokoruna Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

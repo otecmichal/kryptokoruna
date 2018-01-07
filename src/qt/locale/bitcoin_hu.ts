@@ -158,8 +158,8 @@
         <translation>Lemezen lévő blokkok újraindexelése...</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
-        <translation>Favorcoin küldése megadott címre</translation>
+        <source>Send coins to a Kryptokoruna address</source>
+        <translation>Kryptokoruna küldése megadott címre</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -182,8 +182,8 @@
         <translation>Üzenet &amp;valódiságának ellenőrzése</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -210,12 +210,12 @@
         <translation>A tárcádhoz tartozó privát kulcsok titkosítása</translation>
     </message>
     <message>
-        <source>Sign messages with your Favorcoin addresses to prove you own them</source>
-        <translation>Üzenetek aláírása a Favorcoin-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
+        <source>Sign messages with your Kryptokoruna addresses to prove you own them</source>
+        <translation>Üzenetek aláírása a Kryptokoruna-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Favorcoin addresses</source>
-        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Favorcoin-címekkel vannak-e aláírva</translation>
+        <source>Verify messages to ensure they were signed with specified Kryptokoruna addresses</source>
+        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Kryptokoruna-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -234,8 +234,8 @@
         <translation>Fül eszköztár</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and favorcoin: URIs)</source>
-        <translation>Fizetési kérelem (QR-kódot és "favorcoin:" URI azonosítót hoz létre)</translation>
+        <source>Request payments (generates QR codes and kryptokoruna: URIs)</source>
+        <translation>Fizetési kérelem (QR-kódot és "kryptokoruna:" URI azonosítót hoz létre)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -246,16 +246,16 @@
         <translation>A használt fogadó címek és címkék megtekintése</translation>
     </message>
     <message>
-        <source>Open a favorcoin: URI or payment request</source>
-        <translation>"favorcoin:" URI azonosító vagy fizetési kérelem megnyitása</translation>
+        <source>Open a kryptokoruna: URI or payment request</source>
+        <translation>"kryptokoruna:" URI azonosító vagy fizetési kérelem megnyitása</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Paran&amp;cssor kapcsolók</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Favorcoin network</source>
-        <translation><numerusform>%n aktív kapcsolat a Favorcoin hálózathoz</numerusform><numerusform>%n aktív kapcsolat a Favorcoin hálózathoz</numerusform></translation>
+        <source>%n active connection(s) to Kryptokoruna network</source>
+        <translation><numerusform>%n aktív kapcsolat a Kryptokoruna hálózathoz</numerusform><numerusform>%n aktív kapcsolat a Kryptokoruna hálózathoz</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
@@ -592,16 +592,16 @@
         <translation>Szakértő</translation>
     </message>
     <message>
-        <source>Automatically open the Favorcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>A Favorcoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <source>Automatically open the Kryptokoruna client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>A Kryptokoruna-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnP port-feltérképezés</translation>
     </message>
     <message>
-        <source>Connect to the Favorcoin network through a SOCKS5 proxy.</source>
-        <translation>Csatlakozás a Favorcoin hálózatához SOCKS5 proxyn keresztül</translation>
+        <source>Connect to the Kryptokoruna network through a SOCKS5 proxy.</source>
+        <translation>Csatlakozás a Kryptokoruna hálózatához SOCKS5 proxyn keresztül</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -695,8 +695,8 @@
         <translation>Űrlap</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Favorcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Favorcoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kryptokoruna network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Kryptokoruna hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -764,8 +764,8 @@
         <translation>Összeg</translation>
     </message>
     <message>
-        <source>Enter a Favorcoin address (e.g. %1)</source>
-        <translation>Ad meg egy Favorcoin címet (pl: %1)</translation>
+        <source>Enter a Kryptokoruna address (e.g. %1)</source>
+        <translation>Ad meg egy Kryptokoruna címet (pl: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1285,7 +1285,7 @@
         <translation>A jelenleg kiválasztott aláírás másolása a rendszer-vágólapra</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Favorcoin address</source>
+        <source>Sign the message to prove you own this Kryptokoruna address</source>
         <translation>Üzenet </translation>
     </message>
     <message>
@@ -1378,8 +1378,8 @@
 </translation>
     </message>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>Favorcoin Core</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>Kryptokoruna Core</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -1533,7 +1533,7 @@
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Nincs elég favorcoinod.</translation>
+        <translation>Nincs elég kryptokorunaod.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

@@ -62,11 +62,11 @@
         <translation>מקבל כתובות</translation>
     </message>
     <message>
-        <source>These are your Favorcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Kryptokoruna addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>אלה הם כתובות לייטקוין שלך לשליחת תשלומים. חשוב לבדוק את הכמות של הכתובות המקבלות לפני שליחת מטבעות</translation>
     </message>
     <message>
-        <source>These are your Favorcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Kryptokoruna addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>אלה הן כתובות לייטקוין שלך לקבלת תשלומים. מומלץ להשתמש בכתובת חדשה לכל העברה.</translation>
     </message>
     <message>
@@ -218,7 +218,7 @@
         <translation>המקטעים נוספים למפתח בכונן…</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
+        <source>Send coins to a Kryptokoruna address</source>
         <translation>שליחת מטבעות לכתובת לייטקוין</translation>
     </message>
     <message>
@@ -242,7 +242,7 @@
         <translation>&amp;אימות הודעה…</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
+        <source>Kryptokoruna</source>
         <translation>לייטקוין</translation>
     </message>
     <message>
@@ -270,11 +270,11 @@
         <translation>הצפנת המפתחות הפרטיים ששייכים לארנק שלך</translation>
     </message>
     <message>
-        <source>Sign messages with your Favorcoin addresses to prove you own them</source>
+        <source>Sign messages with your Kryptokoruna addresses to prove you own them</source>
         <translation>חתום על הודעות עם כתובות לייטקוין שלך כדי להוכיח שהן בבעלותך</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Favorcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Kryptokoruna addresses</source>
         <translation>אמת הודעות כדי להבטיח שהן נחתמו עם כתובת לייטקוין מסוימות</translation>
     </message>
     <message>
@@ -294,8 +294,8 @@
         <translation>סרגל כלים לשוניות</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and favorcoin: URIs)</source>
-        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :favorcoin)</translation>
+        <source>Request payments (generates QR codes and kryptokoruna: URIs)</source>
+        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :kryptokoruna)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -306,7 +306,7 @@
         <translation>הצגת רשימת הכתובות והתוויות הנמצאות בשימוש</translation>
     </message>
     <message>
-        <source>Open a favorcoin: URI or payment request</source>
+        <source>Open a kryptokoruna: URI or payment request</source>
         <translation>פתיחת לייטקוין: כתובת משאב או בקשת תשלום</translation>
     </message>
     <message>
@@ -670,7 +670,7 @@
         <translation>עודף &amp;בלתי מאושר מההשקעה</translation>
     </message>
     <message>
-        <source>Automatically open the Favorcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Kryptokoruna client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>פתיחת הפתחה של לייטקוין בנתב באופן אוטומטי. עובד רק אם UPnP מופעל ונתמך בנתב.</translation>
     </message>
     <message>
@@ -777,7 +777,7 @@
         <translation>טופס</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Favorcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kryptokoruna network after a connection is established, but this process has not completed yet.</source>
         <translation>המידע המוצג עשוי להיות מיושן. הארנק שלך מסתנכרן באופן אוטומטי עם רשת לייטקוין לאחר יצירת החיבור, אך התהליך טרם הסתיים.</translation>
     </message>
     <message>
@@ -862,7 +862,7 @@
         <translation>כמות</translation>
     </message>
     <message>
-        <source>Enter a Favorcoin address (e.g. %1)</source>
+        <source>Enter a Kryptokoruna address (e.g. %1)</source>
         <translation>נא להזין כתובת לייטקוין (למשל: %1)</translation>
     </message>
     <message>
@@ -1182,7 +1182,7 @@
         <translation>ש&amp;ימוש &amp;חוזר בכתובת קבלה קיימת (לא מומלץ)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Favorcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Kryptokoruna network.</source>
         <translation>הודעת רשות לצירוף לבקשת התשלום שתוצג בעת פתיחת הבקשה. לתשומת לבך: ההודעה לא תישלח עם התשלום ברשת לייטקוין.</translation>
     </message>
     <message>
@@ -1418,7 +1418,7 @@
         <translation>זהו תשלום רגיל.</translation>
     </message>
     <message>
-        <source>The Favorcoin address to send the payment to</source>
+        <source>The Kryptokoruna address to send the payment to</source>
         <translation>כתובת לייטקוין של המוטב</translation>
     </message>
     <message>
@@ -1450,7 +1450,7 @@
         <translation>יש להזין תווית עבור כתובת זו כדי להוסיף אותה לרשימת הכתובות בשימוש</translation>
     </message>
     <message>
-        <source>A message that was attached to the favorcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Favorcoin network.</source>
+        <source>A message that was attached to the kryptokoruna: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Kryptokoruna network.</source>
         <translation>הודעה שצורפה ללייטקוין: כתובת שתאוחסן בהעברה לצורך מעקב מצדך. לתשומת לבך: הודעה זו לא תישלח ברשת לייטקוין.</translation>
     </message>
     <message>
@@ -1483,7 +1483,7 @@
         <translation>חתימה על הו&amp;דעה</translation>
     </message>
     <message>
-        <source>The Favorcoin address to sign the message with</source>
+        <source>The Kryptokoruna address to sign the message with</source>
         <translation>כתובת הלייטקוין אתה לחתום אתה את ההודעה</translation>
     </message>
     <message>
@@ -1515,7 +1515,7 @@
         <translation>העתקת החתימה הנוכחית ללוח הגזירים</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Favorcoin address</source>
+        <source>Sign the message to prove you own this Kryptokoruna address</source>
         <translation>ניתן לחתום על ההודעה כדי להוכיח שכתובת לייטקוין הזו בבעלותך.</translation>
     </message>
     <message>
@@ -1535,11 +1535,11 @@
         <translation>&amp;אימות הודעה</translation>
     </message>
     <message>
-        <source>The Favorcoin address the message was signed with</source>
+        <source>The Kryptokoruna address the message was signed with</source>
         <translation>כתובת הלייטקוין שאתה נחתמה ההודעה</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Favorcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Kryptokoruna address</source>
         <translation>ניתן לאמת את ההודעה כדי להבטיח שהיא נחתמה עם כתובת לייטקוין הנתונה</translation>
     </message>
     <message>
@@ -1648,7 +1648,7 @@
         <translation>ריצה כסוכן ברקע וקבלת פקודות</translation>
     </message>
     <message>
-        <source>Favorcoin Core</source>
+        <source>Kryptokoruna Core</source>
         <translation>ליבת לייטקוין</translation>
     </message>
     <message>

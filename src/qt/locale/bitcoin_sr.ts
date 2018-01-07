@@ -130,8 +130,8 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Favorcoin address</source>
-        <translation>Пошаљите новац на favorcoin адресу</translation>
+        <source>Send coins to a Kryptokoruna address</source>
+        <translation>Пошаљите новац на kryptokoruna адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>

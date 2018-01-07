@@ -208,8 +208,8 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("favorcointools.com", "testnet-seed.favorcointools.com"));
-        vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-b.favorcoin.loshan.co.uk", true));
+        vSeeds.push_back(CDNSSeedData("kryptokorunatools.com", "testnet-seed.kryptokorunatools.com"));
+        vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-b.kryptokoruna.loshan.co.uk", true));
         vSeeds.push_back(CDNSSeedData("thrasher.io", "dnsseed-testnet.thrasher.io", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);

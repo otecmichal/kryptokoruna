@@ -66,11 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += favorcoind
+  bin_PROGRAMS += kryptokorunad
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += favorcoin-cli favorcoin-tx
+  bin_PROGRAMS += kryptokoruna-cli kryptokoruna-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -353,16 +353,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-favorcoind_SOURCES = bitcoind.cpp
-favorcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-favorcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-favorcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+kryptokorunad_SOURCES = bitcoind.cpp
+kryptokorunad_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+kryptokorunad_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+kryptokorunad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-favorcoind_SOURCES += bitcoind-res.rc
+kryptokorunad_SOURCES += bitcoind-res.rc
 endif
 
-favorcoind_LDADD = \
+kryptokorunad_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -375,38 +375,38 @@ favorcoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-favorcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+kryptokorunad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-favorcoin_cli_SOURCES = bitcoin-cli.cpp
-favorcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-favorcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-favorcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+kryptokoruna_cli_SOURCES = bitcoin-cli.cpp
+kryptokoruna_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+kryptokoruna_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+kryptokoruna_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-favorcoin_cli_SOURCES += bitcoin-cli-res.rc
+kryptokoruna_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-favorcoin_cli_LDADD = \
+kryptokoruna_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-favorcoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+kryptokoruna_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-favorcoin_tx_SOURCES = bitcoin-tx.cpp
-favorcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-favorcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-favorcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+kryptokoruna_tx_SOURCES = bitcoin-tx.cpp
+kryptokoruna_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+kryptokoruna_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+kryptokoruna_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-favorcoin_tx_SOURCES += bitcoin-tx-res.rc
+kryptokoruna_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-favorcoin_tx_LDADD = \
+kryptokoruna_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -414,7 +414,7 @@ favorcoin_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-favorcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+kryptokoruna_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

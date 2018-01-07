@@ -1467,7 +1467,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Favorcoin " + FormatFullVersion();
+        std::string strDesc = "Kryptokoruna " + FormatFullVersion();
 
         try {
             while (true) {

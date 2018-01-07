@@ -114,8 +114,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Favorcoin</source>
-        <translation>Favorcoin</translation>
+        <source>Kryptokoruna</source>
+        <translation>Kryptokoruna</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -484,8 +484,8 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Favorcoin Core</source>
-        <translation>Craidd Favorcoin</translation>
+        <source>Kryptokoruna Core</source>
+        <translation>Craidd Kryptokoruna</translation>
     </message>
     <message>
         <source>Information</source>
