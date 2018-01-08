@@ -77,13 +77,13 @@ public:
         consensus.BIP66Height = 904; // 8dfbe15e1c8d8b85e6ed330048341b89d18cca85019d093d058082057568f8ea
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
         //consensus.nPowTargetTimespan = 60 * 60; // 60 minutes 
-	consensus.nPowTargetTimespan = 10 * 60; // 10 minutes - original Favor-Coin
+	    consensus.nPowTargetTimespan = 10 * 60; // 10 minutes - original Favor-Coin
         //consensus.nPowTargetSpacing = 2 * 60; // 2 minutes
-	consensus.nPowTargetSpacing = 1 * 60; // 1 minute - original Favor-Coin
+	    consensus.nPowTargetSpacing = 1 * 60; // 1 minute - original Favor-Coin
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-	consensus.nMinerConfirmationWindow = consensus.nPowTargetTimespan / consensus.nPowTargetSpacing * 4;
-	consensus.nRuleChangeActivationThreshold = 0.75 * consensus.nMinerConfirmationWindow;
+	    consensus.nMinerConfirmationWindow = consensus.nPowTargetTimespan / consensus.nPowTargetSpacing * 4;
+	    consensus.nRuleChangeActivationThreshold = 0.75 * consensus.nMinerConfirmationWindow;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -142,14 +142,16 @@ public:
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
             (  0, uint256S("0x518b1d7d78729e3f0eaef42d558ae10f8ce098eb673335f2189abc6883d6a177"))
+            (  925, uint256S("0x31430f841cc3ee8240d38c140ec8b75bfa95ce98f81986904bd523babbb59348"))
+
         };
 
         chainTxData = ChainTxData{
             // Data as of block b44bc5ae41d1be67227ba9ad875d7268aa86c965b1d64b47c35be6e8d5c352f4 (height 1155626).
-            //1487715936, // * UNIX timestamp of last known number of transactions
-            //9243806,  // * total number of transactions between genesis and that timestamp
+            1515417054, //1487715936, // * UNIX timestamp of last known number of transactions
+            942,        //9243806,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
-            //0.06     // * estimated number of transactions per second after that timestamp
+            0.01//0.06     // * estimated number of transactions per second after that timestamp
         };
     }
 };
