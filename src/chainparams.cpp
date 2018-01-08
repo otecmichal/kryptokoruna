@@ -76,12 +76,16 @@ public:
         consensus.BIP65Height = 902; // a75d671abe6029458c96f0a6dc25a39878d04b2e36dc5f65a0b56a6a62e2c0f3
         consensus.BIP66Height = 904; // 8dfbe15e1c8d8b85e6ed330048341b89d18cca85019d093d058082057568f8ea
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
-        consensus.nPowTargetTimespan = 60 * 60; // 60 minutes 
-        consensus.nPowTargetSpacing = 2 * 60; // 1 minute
+        //consensus.nPowTargetTimespan = 60 * 60; // 60 minutes 
+	consensus.nPowTargetTimespan = 10 * 60; // 10 minutes - original Favor-Coin
+        //consensus.nPowTargetSpacing = 2 * 60; // 2 minutes
+	consensus.nPowTargetSpacing = 1 * 60; // 1 minute - original Favor-Coin
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nRuleChangeActivationThreshold = 90; // 75% of 8064
-        consensus.nMinerConfirmationWindow = 120; // nPowTargetTimespan / nPowTargetSpacing * 4
+        //consensus.nRuleChangeActivationThreshold = 90; // 75% of 8064
+	consensus.nRuleChangeActivationThreshold = consensus.nPowTargetTimespan / consensus.nPowTargetSpacing * 4; // original Favor-coin
+        //consensus.nMinerConfirmationWindow = 120; // nPowTargetTimespan / nPowTargetSpacing * 4
+	consensus.nMinerConfirmationWindow = 40; // oroginal Favor-coin
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -98,7 +102,7 @@ public:
 
         // The best chain should have at least this much work.
         //consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000006805c7318ce2736c0");
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000100");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000010");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x85d982afeb5678c6db3960d2bede01ff48595f25fd5082834fdae84f437539c2"); //901
