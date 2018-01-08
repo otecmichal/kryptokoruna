@@ -82,10 +82,8 @@ public:
 	consensus.nPowTargetSpacing = 1 * 60; // 1 minute - original Favor-Coin
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        //consensus.nRuleChangeActivationThreshold = 90; // 75% of 8064
-	consensus.nRuleChangeActivationThreshold = consensus.nPowTargetTimespan / consensus.nPowTargetSpacing * 4; // original Favor-coin
-        //consensus.nMinerConfirmationWindow = 120; // nPowTargetTimespan / nPowTargetSpacing * 4
-	consensus.nMinerConfirmationWindow = 40; // oroginal Favor-coin
+	consensus.nMinerConfirmationWindow = consensus.nPowTargetTimespan / consensus.nPowTargetSpacing * 4;
+	consensus.nRuleChangeActivationThreshold = 0.75 * consensus.nMinerConfirmationWindow;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
