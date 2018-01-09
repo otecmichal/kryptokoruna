@@ -2464,7 +2464,7 @@ static void NotifyHeaderTip() {
     bool fNotify = false;
     bool fInitialBlockDownload = false;
     static CBlockIndex* pindexHeaderOld = NULL;
-    LogPrintf("NotifyHeaderTip() \n");
+    //LogPrintf("NotifyHeaderTip() \n");
     CBlockIndex* pindexHeader = NULL;
     {
         LOCK(cs_main);
