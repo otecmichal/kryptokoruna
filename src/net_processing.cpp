@@ -825,7 +825,6 @@ void PeerLogicValidation::UpdatedBlockTip(const CBlockIndex *pindexNew, const CB
     }
 
     if (!fInitialDownload) {
-        LogPrintf("MT: Ocividne nie sme v initial download, takze pokracujeme. \n");
         // Find the hashes of all blocks that weren't previously in the best chain.
         std::vector<uint256> vHashes;
         const CBlockIndex *pindexToAnnounce = pindexNew;
