@@ -1033,7 +1033,6 @@ void CConnman::AcceptConnection(const ListenSocket& hListenSocket) {
         if (!addr.SetSockAddr((const struct sockaddr*)&sockaddr))
             LogPrintf("Warning: Unknown socket family\n");
 
-    //LogPrintf("MT: addr: %s \n",addr.ToString());
     bool whitelisted = hListenSocket.whitelisted || IsWhitelistedRange(addr);
     {
         LOCK(cs_vNodes);
@@ -1597,6 +1596,7 @@ void CConnman::ThreadDNSAddressSeed()
                     CAddress addr = CAddress(CService(ip, Params().GetDefaultPort()), requiredServiceBits);
                     addr.nTime = GetTime() - 3*nOneDay - GetRand(4*nOneDay); // use a random age between 3 and 7 days old
                     vAdd.push_back(addr);
+                    LogPrintf("DNSseed found %s\n", addr.ToString());
                     found++;
                 }
             }
@@ -1775,8 +1775,9 @@ void CConnman::ThreadOpenConnections()
             CAddrInfo addr = addrman.Select(fFeeler);
 
             // if we selected an invalid address, restart
-            if (!addr.IsValid() || setConnected.count(addr.GetGroup()) || IsLocal(addr))
+            if (!addr.IsValid() || setConnected.count(addr.GetGroup()) || IsLocal(addr)) {
                 break;
+            }
 
             // If we didn't find an appropriate destination after trying 100 addresses fetched from addrman,
             // stop this loop, and let the outer loop run again (which sleeps, adds seed nodes, recalculates
@@ -1785,8 +1786,10 @@ void CConnman::ThreadOpenConnections()
             if (nTries > 100)
                 break;
 
-            if (IsLimited(addr))
+            if (IsLimited(addr)) {
+                LogPrintf("Addr %s is limited.\n",addr.ToString());
                 continue;
+            }
 
             // only connect to full nodes
             if ((addr.nServices & REQUIRED_SERVICES) != REQUIRED_SERVICES)
@@ -1796,19 +1799,29 @@ void CConnman::ThreadOpenConnections()
             if (nANow - addr.nLastTry < 600 && nTries < 30)
                 continue;
 
+            
             // only consider nodes missing relevant services after 40 failed attempts and only if less than half the outbound are up.
             ServiceFlags nRequiredServices = nRelevantServices;
             if (nTries >= 40 && nOutbound < (nMaxOutbound >> 1)) {
                 nRequiredServices = REQUIRED_SERVICES;
             }
 
+            /*
+            This is disabled by MT for development purposes. Kryptokoruna network has few nodes and 
+            framework around required services is not working properly.
+
+            Let's connect to all peers.
+
+
             if ((addr.nServices & nRequiredServices) != nRequiredServices) {
                 continue;
             }
+            */
 
             // do not allow non-default ports, unless after 50 invalid addresses selected already
-            if (addr.GetPort() != Params().GetDefaultPort() && nTries < 50)
+            if (addr.GetPort() != Params().GetDefaultPort() && nTries < 50) {
                 continue;
+            }
 
             addrConnect = addr;
 
@@ -2669,7 +2682,6 @@ CNode::CNode(NodeId idIn, ServiceFlags nLocalServicesIn, int nMyStartingHeightIn
     nVersion = 0;
     strSubVer = "";
     fWhitelisted = false;
-    //fWhitelisted = true;  // temporary fix to avoid issue with 2017-08-03 08:16:35 Ignoring getheaders from peer=0 because node is in initial block download
     fOneShot = false;
     fAddnode = false;
     fClient = false; // set by version message
