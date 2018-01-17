@@ -125,6 +125,7 @@ public:
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.push_back(CDNSSeedData("netapp.work", "elsa.netapp.work", false));
         vSeeds.push_back(CDNSSeedData("kryptokoruna.net", "node1.kryptokoruna.net", false));
+        vSeeds.push_back(CDNSSeedData("nrjplus.sk", "gate.nrjplus.sk", false));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
